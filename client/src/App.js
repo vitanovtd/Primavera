@@ -11,7 +11,8 @@ import './App.scss';
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
-
+import Meal from "./pages/Meal";
+import Menu from "./pages/Menu";
 
 const Layout = () => {
   return (
@@ -33,7 +34,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />
       },
-
+      {
+        path: "/meal/:id",
+        element: <Meal />
+      },
+      {
+        path: "/menu",
+        element: <Menu />
+      }
 
     ]
   }
