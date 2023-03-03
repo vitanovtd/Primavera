@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 
 const Navbar = () => {
@@ -24,6 +29,15 @@ const Navbar = () => {
                     </div>
                     <div className="item">
                         <Link className="link" to="/">Our Location</Link>
+                    </div>
+                    <div className="icons">
+                        <SearchIcon />
+                        <PersonOutlineIcon />
+                        <FavoriteBorderOutlinedIcon />
+                        <div className="deliveryIcon">
+                            <DeliveryDiningIcon />
+                            <span>0</span>
+                        </div>
                     </div>
                 </div>
             </div>
