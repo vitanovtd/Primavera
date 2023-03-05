@@ -7,8 +7,24 @@
         align-items: center;
         justify-content: space-between;
 
-        .logo{
-            text-decoration: none;
+
+
+        .item{
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+        }
+
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            font-size: 2rem;
+
+            
+            .logo{
+                text-decoration: none;
+            }
         }
     }
 
