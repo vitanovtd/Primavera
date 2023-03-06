@@ -4,7 +4,7 @@ import "./Footer.scss";
 import PlaceIcon from '@mui/icons-material/Place';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
-
+import MailIcon from '@mui/icons-material/Mail';
 
 const Footer = () => {
     return (
@@ -24,17 +24,17 @@ const Footer = () => {
                     <div className="center">
                         <div className="item">
                             <h4>Contacts</h4>
-                            <div className="Icon">
+                            <div className="icon">
                                 <PlaceIcon />
                                 <span>Sofia Center</span>
                             </div>
-                            <div className="Icon">
+                            <div className="icon">
                                 <PhoneIcon />
                                 <span>+359 888 888 888</span>
                             </div>
-                            <div className="Icon">
+                            <div className="icon">
                                 <EmailIcon />
-                                <span>primaverainfo@fake.com</span>
+                                <span>primavera@fake.com</span>
                             </div>
 
                         </div>
@@ -49,9 +49,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bottom">
-                    <p className="rightsFooter">© Primavera. All Rights Reserved | Designed by Tisho</p>
-                </div>
+
+            </div>
+            <div className="bottom">
+                <p className="rightsFooter">© Primavera. All Rights Reserved | Designed by Tisho</p>
             </div>
         </div>
     );
