@@ -1,17 +1,40 @@
+.footer{
+    background-color: #2b2929;
+}
+
+
 .container{
     margin: 10rem 20rem 3rem 20rem;
+    
+    h4{
+        margin-bottom: 1rem;
+        color: #fffefe;
+    }
     .top{
         display: flex;
         gap: 5rem;
-
+        
         .item{
             flex:1;
             display: flex;
             flex-direction: column;
             text-align: justify;
             font-size: 1.4rem;
+            .primaveraInfo{
+                color: #777;
+            }
             .icon{
                 display: flex;
+                color: #777;
+                span{
+                    color:#fffefe;
+                }
+            }
+        }
+        .right{
+           
+            span{
+                color: #fffefe;
             }
         }
     }
