@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="bottom">
+            <div className="bottomFooter">
                 <p className="rightsFooter">© Primavera. All Rights Reserved | Designed by Tisho</p>
             </div>
         </div>
