@@ -13,6 +13,8 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
 import Meal from "./pages/Meal";
 import Menu from "./pages/Menu";
+import About from "./pages/About";
+
 
 const Layout = () => {
   return (
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />
+      },
+      {
+        path: "/about",
+        element: <About />
       },
       {
         path: "/meal/:id",

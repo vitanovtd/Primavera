@@ -17,6 +17,13 @@
             color: #222;
         }
 
+        .item  :focus,
+        .item :hover {
+            font-weight: 500;
+            border-bottom:  0.2rem solid #888;
+        }
+
+
         .left{
             display: flex;
             align-items: center;
