@@ -31,11 +31,11 @@ const Navbar = () => {
                         <Link className="link" to="/">Our Location</Link>
                     </div>
                     <div className="icons">
-                        <SearchIcon />
-                        <PersonOutlineIcon />
-                        <FavoriteBorderOutlinedIcon />
+                        <SearchIcon className="navIcon" />
+                        <PersonOutlineIcon className="navIcon" />
+                        <FavoriteBorderOutlinedIcon className="navIcon" />
                         <div className="deliveryIcon">
-                            <DeliveryDiningIcon />
+                            <ShoppingCartIcon className="navIcon" />
                             <span>0</span>
                         </div>
                     </div>
