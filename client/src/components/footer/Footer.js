@@ -4,7 +4,7 @@ import "./Footer.scss";
 import PlaceIcon from '@mui/icons-material/Place';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
-import MailIcon from '@mui/icons-material/Mail';
+
 
 const Footer = () => {
     return (
@@ -17,7 +17,8 @@ const Footer = () => {
                             <p className="primaveraInfo">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                                 Suspendisse potenti. Morbi et vehicula neque. Aliquam condimentum convallis nibh. Nunc sed diam
                                 vel mauris vulputate tristique. Mauris odio risus, consequat at malesuada non, gravida vitae libero.
-                                Etiam tempus ultricies purus in tempus.</p>
+                                Etiam tempus ultricies purus in tempus.
+                                vel mauris vulputate tristique. </p>
                         </div>
                     </div>
 
