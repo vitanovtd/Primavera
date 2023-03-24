@@ -11,9 +11,9 @@ const Slider = () => {
 
 
     const data = [
-        "https://images.pexels.com/photos/5591663/pexels-photo-5591663.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/14030947/pexels-photo-14030947.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        "https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        "https://images.pexels.com/photos/5591663/pexels-photo-5591663.jpeg?auto=compress&cs=tinysrgb&w=1600",
     ]
 
     const prevSlide = () => {
