@@ -28,7 +28,7 @@ const Navbar = () => {
                         <Link className="link" to="/">Reservation</Link>
                     </div>
                     <div className="item">
-                        <Link className="link" to="/about">Contact us</Link>
+                        <Link className="link" to="/contact">Contact us</Link>
                     </div>
                     <div className="icons">
                         <SearchIcon className="navIcon" />
