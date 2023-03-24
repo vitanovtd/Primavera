@@ -31,11 +31,16 @@
             width: 10rem;
             height: 10rem;
             border: 0.2rem solid #b8b0b0;
+            border-radius: 50%;
             display: flex;
             justify-content: center;
             color:#2c1f7a;
             align-items: center;
             cursor: pointer;
+
+            .dirIcon{
+                font-size: 4rem;
+            }
         }
     }
 }
