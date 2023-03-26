@@ -11,8 +11,8 @@ import './App.scss';
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
-import Meal from "./pages/Meal";
-import Menu from "./pages/Menu/Menu"
+import Meal from "./pages/Meal/Meal";
+import Menu from "./pages/Menu/Menu";
 import Contact from "./pages/Contact/Contact";
 
 
