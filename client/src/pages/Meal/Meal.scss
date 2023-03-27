@@ -31,7 +31,7 @@
         .price{
             font-size: 3rem;
             font-weight: 500;
-            color: #2879fe;
+            color: #282a2a;
         }
 
         p{
@@ -56,5 +56,53 @@
                 border: none;
             }
         }
+
+        .addBtn{
+            width: 25rem;
+            height: 4rem;
+            pad: 1rem;
+            background-color: #5f4141;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            cursor: pointer;
+            border:none;
+            font-weight: 500;
+        }
+
+        .links{
+            display: flex;
+            gap: 2rem;
+            font-size: 1.8rem;
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                color: #5f4141;
+                font-size: 1.4rem;
+                cursor: pointer;
+            }
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: gray;
+            font-size: 1.4rem;
+            margin-top: 3rem;
+
+            hr{
+                width: 20rem;
+                border: 0.1rem solid rgb(238, 237, 237);
+              }
+        }
+
+        hr{
+            border: 0.1rem  solid rgb(238, 237, 237);
+          }
     }
 }
