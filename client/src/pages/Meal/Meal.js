@@ -39,7 +39,7 @@ const Meal = () => {
                 </button>
                 <div className='links'>
                     <div className='item'>
-                        <FavoriteBorderIcon /> Add To Wish List
+                        <FavoriteBorderIcon /> Add To Favorites
                     </div>
                     <div className='item'>
                         <BalanceIcon /> Add to compare

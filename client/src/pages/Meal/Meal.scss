@@ -1,0 +1,60 @@
+.meal{
+    padding: 2rem, 5rem;
+    display: flex;
+    gap: 5rem;
+
+    .left{
+        flex: 1;
+        display: flex;
+        gap: 2rem;
+
+        img{
+            width: 100%;
+            max-height: 80rem;
+            object-fit: cover;
+        }
+
+
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        h1{
+            font-size: 4rem;
+
+        }
+
+        .price{
+            font-size: 3rem;
+            font-weight: 500;
+            color: #2879fe;
+        }
+
+        p{
+            font-size: 1.8rem;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+        .quantity {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            button{
+                width: 5rem;
+                height: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border: none;
+            }
+        }
+    }
+}
