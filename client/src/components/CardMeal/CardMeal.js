@@ -1,11 +1,22 @@
 import './Meal.scss';
+import { Link } from 'react-router-dom';
 
-
-const CardMeal = () => {
+const CardMeal = ({ item }) => {
     return (
-        <div className='cardMeal'>
+        <Link className='link' to={`/meal/${item.id}`}>
+            <div className='cardMeal'>
+                <div className='image'>
+                    <img src='' alt='' />
+                    <img src='' alt='' />
+                </div>
+                <div className='prices'>
 
-        </div>
+                </div>
+                <div className='weight'>
+
+                </div>
+            </div>
+        </Link>
     );
 }
 
