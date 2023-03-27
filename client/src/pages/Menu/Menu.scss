@@ -1,3 +1,39 @@
 .menu {
-    
+    padding: 3rem 5rem;
+    display: flex;
+
+    .left {
+        flex: 1;
+        position: sticky;
+        height: 100%;
+        top: 5rem;
+
+        .filterItem{
+            margin-bottom: 3rem;
+
+            h2{
+                font-size: 2.4rem;
+                font-weight: 500;
+                margin-bottom: 3rem;
+            }
+
+            .inputItem{
+                margin-bottom: 1.8rem;
+                span{
+                    font-size: 2rem;
+                }
+
+
+                label{
+                    font-size: 2rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .right{
+        
+    }
+   
 }
