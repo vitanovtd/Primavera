@@ -1,4 +1,4 @@
-import './Meal.scss';
+import './CardMeal.scss';
 import { Link } from 'react-router-dom';
 
 const CardMeal = ({ item }) => {

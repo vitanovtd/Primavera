@@ -1,9 +1,11 @@
 import "./Menu.scss";
 import { useState } from 'react';
-
+import List from '../../components/List/List';
+import { useParams } from "react-router-dom";
 
 
 const Menu = () => {
+
 
     const [maxPrice, setMaxPrice] = useState(200);
     const [sort, setSort] = useState(null);
@@ -52,8 +54,8 @@ const Menu = () => {
             </div>
 
             <div className="right">
-                <img className="menuImg" src="https://images.pexels.com/photos/4061560/pexels-photo-4061560.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Online delivery image" />
-                <div></div>
+                <img className="menuImg" src="https://images.pexels.com/photos/4061560/pexels-photo-4061560.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Online delivery" />
+                <List maxPrice={maxPrice} sort={sort} />
             </div>
         </div>
     )

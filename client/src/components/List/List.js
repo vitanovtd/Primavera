@@ -5,7 +5,10 @@ const List = () => {
     const data = [];
     return (
         <div className='list'>
-            Hello there
+            {data?.map(item => (
+                <CardMeal item={item} key={item.id} />
+            ))}
+
         </div>
     )
 }
