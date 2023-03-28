@@ -28,7 +28,7 @@ const Cart = () => {
                 <span>SUBTOTAL</span>
                 <span>$123</span>
             </div>
-            <button>PROCEED TO CHECKOUT</button>
+            <button>Proceed with checkout</button>
             <span className='reset'>Reset Cart</span>
         </div>
     )
