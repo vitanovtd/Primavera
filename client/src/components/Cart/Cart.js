@@ -25,7 +25,7 @@ const Cart = () => {
                 </div>
             ))}
             <div className='total'>
-                <span>SUBTOTAL</span>
+                <span>TOTAL</span>
                 <span>$123</span>
             </div>
             <button>Proceed with checkout</button>

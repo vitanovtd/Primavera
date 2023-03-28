@@ -51,6 +51,7 @@
     }
   
     .total {
+      font-family: "Pinyon Script",serif;
       display: flex;
       justify-content: space-between;
       font-weight: 500;
@@ -61,21 +62,26 @@
     button {
       width: 25rem;
       padding: 1rem;
+      font-size: 1.4rem;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 2rem;
       cursor: pointer;
       border: none;
-      background-color: #2879fe;
+      background-color: #6557a8;
       color: white;
       font-weight: 500;
       margin-bottom: 2rem;
     }
+
+    button:hover{
+      background-color:#7768c1 ;
+    }
   
     .reset{
-      color:red;
-      font-size: 1.2rem;
+      color:#c71f0c;
+      font-size: 1.8rem;
       cursor: pointer;
     }
   }
