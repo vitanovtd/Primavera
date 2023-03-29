@@ -1,0 +1,72 @@
+  
+  .pin {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    color: rgb(95, 26, 207);
+
+    .pinIcon {
+        font-size: 4rem;
+      }
+      
+    .pinText{
+        font-size: 1.8rem;
+    }
+
+  }
+  
+
+
+.map{
+    display: flex;
+
+    .mapText{
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 2rem;
+        padding-left: 1rem;
+        text-align: center;
+    }
+
+      
+  .googleMap {
+    width: 100%;
+    height: 80rem;
+
+
+    .mapImage{
+        object-fit: cover;
+    }
+  }
+
+
+
+}
+
+@media screen and (min-width: 799px) {
+    .googleMap {
+      height: 80vh;
+    }
+  
+    .mapText {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  
+    .pin {
+      width: 15vw;
+    }
+  
+    .pinIcon {
+      font-size: 10vw;
+    }
+  }
+
+
+
+
+
+
+  
+
+  
