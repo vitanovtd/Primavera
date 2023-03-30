@@ -1,5 +1,6 @@
 import './Contact.scss';
 import Map from './Map';
+import Form from '../../components/Form/Form';
 
 
 const location = {
@@ -21,8 +22,8 @@ const Contact = () => {
                     advocate and strive for a better, more inclusive web for all.
                 </p>
             </div>
-
-
+            <Form />
+            
             <Map location={location} zoomLevel={15} />
         </div>
     )

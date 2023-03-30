@@ -1,5 +1,4 @@
 import GoogleMapReact from 'google-map-react'
-import { GoogleMap, useLoadScript, MarkerF } from '@react-google-maps/api'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './Map.scss';
 
