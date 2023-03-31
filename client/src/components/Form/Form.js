@@ -57,7 +57,7 @@ const Form = () => {
 
                                 {input.type === 'textarea' ? (
                                     <div className='actionForm'>
-                                        <textarea className="formText" placeholder={input.placeholder} rows="8" cols="35" />
+                                        <textarea className="formText" placeholder={input.placeholder} rows="6" cols="35" />
                                         <SendIcon className="formSubmit" />
                                     </div>
                                 ) : (
