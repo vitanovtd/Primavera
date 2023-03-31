@@ -29,14 +29,6 @@ const formInputs = [
 
 
 
-const contactDetails = [
-    {
-        value: '1000 Sofia City Center',
-    },
-    { value: '+1 1233 1233 4444' },
-    { value: 'support@example.com' },
-]
-
 
 
 
