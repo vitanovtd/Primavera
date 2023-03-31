@@ -45,54 +45,56 @@ const Form = () => {
         <div className="contactSection">
             <div className='holder'>
                 <h2 className="formTitle">Send us a message</h2>
-                <div className='left'>
+                {/* <div className='left'> */}
 
-                    <form className="form">
+                <form className="form">
 
 
+                    <div className='input'>
                         {formInputs.map(input => (
                             <label key={input.label} id={input.id} className="formLabel">
                                 {input.label}
 
                                 {input.type === 'textarea' ? (
-                                    <textarea className="formText" placeholder={input.placeholder} />
+                                    <div className='actionForm'>
+                                        <textarea className="formText" placeholder={input.placeholder} rows="8" cols="35" />
+                                        <SendIcon className="formSubmit" />
+                                    </div>
                                 ) : (
                                     <input
                                         className="formInput"
                                         type={input.type}
                                         placeholder={input.placeholder}
                                     />
+
                                 )}
                             </label>
                         ))}
-                        <SendIcon className="formSubmit" />
+                    </div>
+                    {/* <SendIcon className="formSubmit" /> */}
 
 
-                        {/* <button className="formSubmit" type="submit">
+                    {/* <button className="formSubmit" type="submit">
           Send message
         </button> */}
-                    </form>
-                </div>
+                </form>
+                {/* </div> */}
             </div>
             <div className='right'>
+                <h2>Contact Information</h2>
                 <div className='info'>
-                    Contact Information
-                    <div className='icon'>
-                        <LocationOnIcon />
+                    <div className='icons'>
+                        <LocationOnIcon className='icon' />
                         <span>1000 Sofia City Center</span>
                     </div>
-                    <div className='icon'>
-                        <PhoneIcon />
+                    <div className='icons'>
+                        <PhoneIcon className='icon' />
                         <span>+1 1233 1233 4444</span>
                     </div>
-                    <div className='icon'>
-                        <EmailIcon />
+                    <div className='icons'>
+                        <EmailIcon className='icon' />
                         <span>support@example.com</span>
                     </div>
-
-
-
-
                 </div>
             </div>
         </div>
