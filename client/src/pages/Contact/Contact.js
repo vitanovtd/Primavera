@@ -15,15 +15,16 @@ const Contact = () => {
         <div className="about">
 
             <div className="introContainer">
-                <h2 className="introTitte">Our Mission</h2>
+                <h2 className="introTitle">Our Mission</h2>
 
                 <p className="introText">
                     Every single person who understands the impact of the web should be an
                     advocate and strive for a better, more inclusive web for all.
                 </p>
+
             </div>
             <Form />
-            
+
             <Map location={location} zoomLevel={15} />
         </div>
     )

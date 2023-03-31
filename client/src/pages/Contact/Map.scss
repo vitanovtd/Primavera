@@ -1,28 +1,10 @@
-  
-  .pin {
-    display: flex;
-    align-items: center;
-    width: 20rem;
-    color: rgb(95, 26, 207);
-
-    .pinIcon {
-        font-size: 4rem;
-      }
-      
-    .pinText{
-        font-size: 1.8rem;
-    }
-
-  }
-  
-
-
 .map{
     display: flex;
-
+    flex-direction: column;
     .mapText{
+        font-family: "Pinyon Script",serif;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 2rem;
         padding-left: 1rem;
         text-align: center;

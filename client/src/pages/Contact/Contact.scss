@@ -1,5 +1,5 @@
 .about{
-position: relative;
+
   
 .introContainer {
   display: flex;
@@ -14,9 +14,11 @@ position: relative;
 
     .introTitle{
         margin:0;
+        font-size: 2.4rem;
     }
 
     .introText{
+        font-size: 1.4rem;
         max-width: 85vw;
     }
 
