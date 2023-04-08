@@ -46,6 +46,9 @@
       "relation": "manyToMany",
       "target": "api::sub-category.sub-category",
       "inversedBy": "meals"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

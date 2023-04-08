@@ -3,34 +3,47 @@ import { useState } from 'react';
 import List from '../../components/List/List';
 import { useParams } from "react-router-dom";
 
+import useFetch from "../../hooks/useFetch";
 
 const Menu = () => {
 
-
+    const menuId = parseInt(useParams().id);
     const [maxPrice, setMaxPrice] = useState(200);
-    const [sort, setSort] = useState(null);
+    const [sort, setSort] = useState('asc');
+
+    const [selectedSubCats, setSelectedSubCats] = useState([]);
+
+    const { data, loading, error } = useFetch(
+        `/sub-categories?[filters][categories][id][$eq]=${menuId}`
+    );
+
+    console.log(data);
+
+
+    const handleChange = (e) => {
+        const value = e.target.value;
+        const isChecked = e.target.checked;
+
+        setSelectedSubCats(
+            isChecked ? [...selectedSubCats, value]
+                : selectedSubCats.filter((item) => item !== value)
+        );
+    };
+
 
     return (
         <div className="menu">
             <div className="left">
                 <div className="filterItem">
                     <h2>Meal Category</h2>
-                    <div className="inputItem">
-                        <input type="checkbox" id="1" value={1} />
-                        <label htmlFor="1">Salads</label>
-                    </div>
-                    <div className="inputItem">
-                        <input type="checkbox" id="2" value={2} />
-                        <label htmlFor="2">Starters</label>
-                    </div>
-                    <div className="inputItem">
-                        <input type="checkbox" id="3" value={3} />
-                        <label htmlFor="3">Main dishes</label>
-                    </div>
-                    <div className="inputItem">
-                        <input type="checkbox" id="4" value={4} />
-                        <label htmlFor="4">Deserts</label>
-                    </div>
+                    {data?.map((item) => (
+                        <div className="inputItem" key={item.id}>
+                            <input type="checkbox" id={item.id} value={item.id} onChange={handleChange} />
+                            <label htmlFor={item.id}>{item.attributes.title}</label>
+                        </div>
+
+                    ))}
+
                 </div>
                 <div className="filterItem">
                     <h2>Filter by price</h2>
@@ -43,11 +56,11 @@ const Menu = () => {
                 <div className='filterItem'>
                     <h2>Sort by</h2>
                     <div className='inputItem'>
-                        <input type="radio" id="asc" value="asc" name="price" onChange={e => setSort("asc")} />
+                        <input type="radio" id="asc" value="asc" name="price" onChange={(e) => setSort("asc")} />
                         <label htmlFor='asc'>Price (Lowest first)</label>
                     </div>
                     <div className='inputItem'>
-                        <input type="radio" id="desc" value="desc" name="price" onChange={e => setSort("desc")} />
+                        <input type="radio" id="desc" value="desc" name="price" onChange={(e) => setSort("desc")} />
                         <label htmlFor='desc'>Price (Highest first)</label>
                     </div>
                 </div>
@@ -55,7 +68,7 @@ const Menu = () => {
 
             <div className="right">
                 <img className="menuImg" src="https://images.pexels.com/photos/4061560/pexels-photo-4061560.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Online delivery" />
-                <List maxPrice={maxPrice} sort={sort} />
+                <List menuId={menuId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats} />
             </div>
         </div>
     )
