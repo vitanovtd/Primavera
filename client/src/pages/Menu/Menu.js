@@ -36,7 +36,7 @@ const Menu = () => {
             <div className="left">
                 <div className="filterItem">
                     <h2>Meal Category</h2>
-                    {data?.map((item) => (
+                    {loading ? "loading" : data?.map((item) => (
                         <div className="inputItem" key={item.id}>
                             <input type="checkbox" id={item.id} value={item.id} onChange={handleChange} />
                             <label htmlFor={item.id}>{item.attributes.title}</label>

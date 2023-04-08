@@ -4,13 +4,19 @@ import { useState } from "react";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import BalanceIcon from "@mui/icons-material/Balance";
+import useFetch from "../../hooks/useFetch";
+import { useParams } from "react-router-dom";
 
 const Meal = () => {
 
+    const id = useParams().id;
 
     const [quantity, setQuantity] = useState(1);
 
+    const { data, loading, error } = useFetch(`/meals/${id}?populate=*`);
 
+
+    console.log(data);
 
     return (
         <div className="meal">
