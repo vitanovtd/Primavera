@@ -8,8 +8,11 @@
         flex: 1;
         display: flex;
         gap: 2rem;
+        justify-content: center;
+        align-items: center;
 
         img{
+            display: flex;
             width: 100%;
             max-height: 80rem;
             object-fit: cover;
@@ -101,7 +104,7 @@
         .info{
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 2rem;
             color: gray;
             font-size: 1.4rem;
             margin-top: 3rem;

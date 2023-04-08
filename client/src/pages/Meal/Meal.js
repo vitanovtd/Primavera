@@ -23,13 +23,13 @@ const Meal = () => {
             <div className="left">
                 <div className="images">
                     <img className="mainImg"
-                        src="" alt=""
+                        src={process.env.REACT_APP_UPLOAD_URL + data?.attributes.img.data.attributes.url} alt=""
                     />
                 </div>
             </div>
             <div className='right'>
-                <h1>Title</h1>
-                <span className='price'>$19</span>
+                <h1>{data?.attributes.title}</h1>
+                <span className='price'>{data?.attributes.price}$</span>
 
                 <p>Lorem ipsum dolar sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore. Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
@@ -53,9 +53,9 @@ const Meal = () => {
                 </div>
 
                 <div className="info">
-                    <span>Dish Type: Main Dish</span>
-                    <span>Tag: Spicy, Vegan</span>
-                    <span >370gr</span>
+                    <span>Dish Type: {data?.attributes?.sub_categories?.data[0].attributes.title}</span>
+                    <span>Tag: {data?.attributes.type}</span>
+                    <span >{data?.attributes.weight}gr</span>
                 </div>
                 <hr />
                 <div className="info">
