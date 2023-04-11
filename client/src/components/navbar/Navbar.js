@@ -7,8 +7,6 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
-import Button from '@mui/material/Button';
-
 import Cart from "../Cart/Cart";
 import { useState } from "react";
 
