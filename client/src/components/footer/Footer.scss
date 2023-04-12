@@ -1,12 +1,14 @@
 .footer{
 
     background-color: #2b2929;
+    
 }
 
 
 .container{
-    margin: 10rem 20rem 2rem 20rem;
     
+    margin: 10rem 20rem 2rem 20rem;
+    height: 12rem;
     h4{
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -48,7 +50,7 @@
 
 
 .bottomFooter{
-    height: 4rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
