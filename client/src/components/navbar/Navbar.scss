@@ -8,7 +8,7 @@
         align-items: center;
         justify-content: space-between;
         
-
+        
 
         .item{
             display: flex;
@@ -17,6 +17,16 @@
             color: #5f4141;
         }
 
+        .active , .active :hover {
+            color: #fff; 
+            background-color: #5f4141; 
+            padding: 1rem 1.4rem; 
+            border-radius: 0.4rem;
+            text-decoration: none; 
+            transition: all 0.2s ease-in-out; 
+            opacity: 0.6;
+          } 
+       
         .item  :focus,
         .item :hover {
             font-weight: 500;

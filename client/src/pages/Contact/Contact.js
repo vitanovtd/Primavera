@@ -18,8 +18,7 @@ const Contact = () => {
                 <h2 className="introTitle">Our Mission</h2>
 
                 <p className="introText">
-                    Every single person who understands the impact of the web should be an
-                    advocate and strive for a better, more inclusive web for all.
+                    We should all strive for the best of yourself. Come and enjoy our delicious food.
                 </p>
 
             </div>

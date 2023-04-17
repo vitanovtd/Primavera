@@ -34,9 +34,7 @@ const Meal = () => {
                 <h1>{data?.attributes.title}</h1>
                 <span className='price'>{data?.attributes.price}$</span>
 
-                <p>Lorem ipsum dolar sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore. Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    seddo eiusmod tempor incididunt ut labore etdolore.
+                <p>{data?.attributes.desc}
                 </p>
                 <div className='quantity'>
                     <button onClick={() => setQuantity((prev) => (prev === 1 ? 1 : prev - 1))}>-</button>

@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
 
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 import Cart from "../Cart/Cart";
@@ -14,6 +14,7 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
 
     const meals = useSelector(state => state.cart.meals);
+
 
 
     const [open, setOpen] = useState(false);
@@ -28,18 +29,18 @@ const Navbar = () => {
                         <Link className="logo" to="/">Primavera</Link>
                     </div>
                 </div>
-                <div className="right">
+                <div className="right" >
                     <div className="item">
-                        <Link className="link" to="/">Home</Link>
+                        <NavLink className="link" to="/">Home</NavLink>
                     </div>
                     <div className="item">
-                        <Link className="link" to="/menu/5">Menu</Link>
+                        <NavLink className="link" to="/menu/5">Menu</NavLink>
                     </div>
+                    {/* <div className="item">
+                        <NavLink className="link" to="/">Reservation</NavLink>
+                    </div> */}
                     <div className="item">
-                        <Link className="link" to="/">Reservation</Link>
-                    </div>
-                    <div className="item">
-                        <Link className="link" to="/contact">Contact us</Link>
+                        <NavLink className="link" to="/contact">Contact us</NavLink>
                     </div>
                     <div className="icons">
                         <SearchIcon className="navIcon" />
@@ -54,7 +55,7 @@ const Navbar = () => {
 
             </div>
             {open && <Cart />}
-        </div>
+        </div >
     )
 }
 
