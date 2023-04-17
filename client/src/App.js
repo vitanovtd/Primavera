@@ -14,7 +14,7 @@ import Home from "./pages/Home/Home";
 import Meal from "./pages/Meal/Meal";
 import Menu from "./pages/Menu/Menu";
 import Contact from "./pages/Contact/Contact";
-
+import NotFound from "./pages/NotFound/NotFound";
 
 const Layout = () => {
   return (
@@ -47,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/menu/:id",
         element: <Menu />
+      },
+      {
+        path: '*',
+        element: <NotFound />
       }
 
     ]
